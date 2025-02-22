@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="SFTPClientTestSuite" verbose="1">
+    <test name="Automatic tests">
+        <classes>
+            <class name="org.project.PositiveTests"/>
+            <class name="org.project.NegativeTests"/>
+            <class name="org.project.ExpectScriptTests"/>
+        </classes>
+    </test>
+</suite>

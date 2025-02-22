@@ -1,0 +1,199 @@
+<html>
+<head>
+<title>TestNG:  Automatic tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Automatic tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>24/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 18 18:50:32 MSK 2025</td>
+</tr>
+<tr><td>Total time:</td><td>6 seconds (6223 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.project.NegativeTests.testInvalidKnownHostsPath()'><b>testInvalidKnownHostsPath</b><br>Test class: org.project.NegativeTests<br>Test method: Неверный путь к known_hosts</td>
+<td></td>
+<td>0</td>
+<td>org.project.NegativeTests@2bbf180e</td></tr>
+<tr>
+<td title='org.project.PositiveTests.testAddDomainIpPair()'><b>testAddDomainIpPair</b><br>Test class: org.project.PositiveTests<br>Test method: Тестирует добавление пары домен-IP.<br>Parameters: 2.4.5.245, superNewDom</td>
+<td></td>
+<td>0</td>
+<td>org.project.PositiveTests@318ba8c8</td></tr>
+<tr>
+<td title='org.project.PositiveTests.testGetDomainByIp()'><b>testGetDomainByIp</b><br>Test class: org.project.PositiveTests<br>Test method: Тестирует получение домена по IP-адресу.<br>Parameters: 192.168.0.1, first.domain</td>
+<td></td>
+<td>0</td>
+<td>org.project.PositiveTests@318ba8c8</td></tr>
+<tr>
+<td title='org.project.PositiveTests.testPrintDomainIpPairs()'><b>testPrintDomainIpPairs</b><br>Test class: org.project.PositiveTests<br>Test method: Тестирует вывод пар 'домен – IP' в алфавитном порядке.</td>
+<td></td>
+<td>0</td>
+<td>org.project.PositiveTests@318ba8c8</td></tr>
+<tr>
+<td title='org.project.PositiveTests.testRemoveDomainIpPairByDomain()'><b>testRemoveDomainIpPairByDomain</b><br>Test class: org.project.PositiveTests<br>Test method: Тестирует удаление пары домен-IP по домену.<br>Parameters: 192.123.27.2, newDom1</td>
+<td></td>
+<td>0</td>
+<td>org.project.PositiveTests@318ba8c8</td></tr>
+<tr>
+<td title='org.project.PositiveTests.testLoadJsonFromFile()'><b>testLoadJsonFromFile</b><br>Test class: org.project.PositiveTests<br>Test method: Тестирует загрузку JSON-файла.</td>
+<td></td>
+<td>0</td>
+<td>org.project.PositiveTests@318ba8c8</td></tr>
+<tr>
+<td title='org.project.PositiveTests.testAddDomainIpPair()'><b>testAddDomainIpPair</b><br>Test class: org.project.PositiveTests<br>Test method: Тестирует добавление пары домен-IP.<br>Parameters: 56.34.23.2, newDom2</td>
+<td></td>
+<td>0</td>
+<td>org.project.PositiveTests@318ba8c8</td></tr>
+<tr>
+<td title='org.project.PositiveTests.testRemoveDomainIpPairByIp()'><b>testRemoveDomainIpPairByIp</b><br>Test class: org.project.PositiveTests<br>Test method: Тестирует удаление пары домен-IP по IP-адресу.<br>Parameters: 192.123.27.2, newDom1</td>
+<td></td>
+<td>0</td>
+<td>org.project.PositiveTests@318ba8c8</td></tr>
+<tr>
+<td title='org.project.PositiveTests.testGetDomainByIp()'><b>testGetDomainByIp</b><br>Test class: org.project.PositiveTests<br>Test method: Тестирует получение домена по IP-адресу.<br>Parameters: 192.168.0.2, second.domain</td>
+<td></td>
+<td>0</td>
+<td>org.project.PositiveTests@318ba8c8</td></tr>
+<tr>
+<td title='org.project.PositiveTests.testGetIpByDomain()'><b>testGetIpByDomain</b><br>Test class: org.project.PositiveTests<br>Test method: Тестирует получение IP-адреса по домену.<br>Parameters: 192.168.0.2, second.domain</td>
+<td></td>
+<td>0</td>
+<td>org.project.PositiveTests@318ba8c8</td></tr>
+<tr>
+<td title='org.project.PositiveTests.testGetIpByDomain()'><b>testGetIpByDomain</b><br>Test class: org.project.PositiveTests<br>Test method: Тестирует получение IP-адреса по домену.<br>Parameters: 192.168.0.3, third.domain</td>
+<td></td>
+<td>0</td>
+<td>org.project.PositiveTests@318ba8c8</td></tr>
+<tr>
+<td title='org.project.PositiveTests.testRemoveDomainIpPairByDomain()'><b>testRemoveDomainIpPairByDomain</b><br>Test class: org.project.PositiveTests<br>Test method: Тестирует удаление пары домен-IP по домену.<br>Parameters: 2.4.5.245, superNewDom</td>
+<td></td>
+<td>0</td>
+<td>org.project.PositiveTests@318ba8c8</td></tr>
+<tr>
+<td title='org.project.PositiveTests.testGetIpByDomain()'><b>testGetIpByDomain</b><br>Test class: org.project.PositiveTests<br>Test method: Тестирует получение IP-адреса по домену.<br>Parameters: 192.168.0.1, first.domain</td>
+<td></td>
+<td>0</td>
+<td>org.project.PositiveTests@318ba8c8</td></tr>
+<tr>
+<td title='org.project.PositiveTests.testRemoveDomainIpPairByIp()'><b>testRemoveDomainIpPairByIp</b><br>Test class: org.project.PositiveTests<br>Test method: Тестирует удаление пары домен-IP по IP-адресу.<br>Parameters: 2.4.5.245, superNewDom</td>
+<td></td>
+<td>0</td>
+<td>org.project.PositiveTests@318ba8c8</td></tr>
+<tr>
+<td title='org.project.PositiveTests.testGetDomainByIp()'><b>testGetDomainByIp</b><br>Test class: org.project.PositiveTests<br>Test method: Тестирует получение домена по IP-адресу.<br>Parameters: 192.168.0.3, third.domain</td>
+<td></td>
+<td>0</td>
+<td>org.project.PositiveTests@318ba8c8</td></tr>
+<tr>
+<td title='org.project.NegativeTests.testInvalidUsername()'><b>testInvalidUsername</b><br>Test class: org.project.NegativeTests<br>Test method: Неверный логин</td>
+<td></td>
+<td>0</td>
+<td>org.project.NegativeTests@2bbf180e</td></tr>
+<tr>
+<td title='org.project.NegativeTests.testInvalidPort()'><b>testInvalidPort</b><br>Test class: org.project.NegativeTests<br>Test method: Неверный порт</td>
+<td></td>
+<td>2</td>
+<td>org.project.NegativeTests@2bbf180e</td></tr>
+<tr>
+<td title='org.project.PositiveTests.testRemoveDomainIpPairByIp()'><b>testRemoveDomainIpPairByIp</b><br>Test class: org.project.PositiveTests<br>Test method: Тестирует удаление пары домен-IP по IP-адресу.<br>Parameters: 56.34.23.2, newDom2</td>
+<td></td>
+<td>0</td>
+<td>org.project.PositiveTests@318ba8c8</td></tr>
+<tr>
+<td title='org.project.PositiveTests.testAddDomainIpPair()'><b>testAddDomainIpPair</b><br>Test class: org.project.PositiveTests<br>Test method: Тестирует добавление пары домен-IP.<br>Parameters: 192.123.27.2, newDom1</td>
+<td></td>
+<td>0</td>
+<td>org.project.PositiveTests@318ba8c8</td></tr>
+<tr>
+<td title='org.project.NegativeTests.testInvalidPassword()'><b>testInvalidPassword</b><br>Test class: org.project.NegativeTests<br>Test method: Неверный пароль</td>
+<td></td>
+<td>0</td>
+<td>org.project.NegativeTests@2bbf180e</td></tr>
+<tr>
+<td title='org.project.NegativeTests.testInvalidFilePath()'><b>testInvalidFilePath</b><br>Test class: org.project.NegativeTests<br>Test method: Неверный путь к файлу</td>
+<td></td>
+<td>0</td>
+<td>org.project.NegativeTests@2bbf180e</td></tr>
+<tr>
+<td title='org.project.PositiveTests.testRemoveDomainIpPairByDomain()'><b>testRemoveDomainIpPairByDomain</b><br>Test class: org.project.PositiveTests<br>Test method: Тестирует удаление пары домен-IP по домену.<br>Parameters: 56.34.23.2, newDom2</td>
+<td></td>
+<td>0</td>
+<td>org.project.PositiveTests@318ba8c8</td></tr>
+<tr>
+<td title='org.project.NegativeTests.testInvalidHost()'><b>testInvalidHost</b><br>Test class: org.project.NegativeTests<br>Test method: Неверный хост</td>
+<td></td>
+<td>0</td>
+<td>org.project.NegativeTests@2bbf180e</td></tr>
+<tr>
+<td title='org.project.PositiveTests.testIsValidIpv4()'><b>testIsValidIpv4</b><br>Test class: org.project.PositiveTests<br>Test method: Тестирует валидность IPv4-адреса.</td>
+<td></td>
+<td>0</td>
+<td>org.project.PositiveTests@318ba8c8</td></tr>
+</table><p>
+</body>
+</html>
